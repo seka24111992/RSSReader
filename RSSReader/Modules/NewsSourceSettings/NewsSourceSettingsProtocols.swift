@@ -10,6 +10,7 @@ import UIKit
 
 protocol NewsSourceSettingsViewProtocol: class {
     func setNewsSources(_ newsSources: [String])
+    func addGestureRecognizerForView()
 }
 
 protocol NewsSourceSettingsInteractorProtocol: class {

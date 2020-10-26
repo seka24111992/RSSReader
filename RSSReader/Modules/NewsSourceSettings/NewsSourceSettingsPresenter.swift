@@ -20,6 +20,7 @@ class NewsSourceSettingsPresenter: NSObject, NewsSourceSettingsPresenterProtocol
     
     func configureView() {
         view.setNewsSources(interactor.newsSources)
+        view.addGestureRecognizerForView()
     }
     
     func needUpdateSources(_ sources: [String]) {

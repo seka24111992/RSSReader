@@ -49,6 +49,15 @@ class NewsSourceSettingsViewController: UIViewController, NewsSourceSettingsView
         tableView.reloadData()
     }
     
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        textField.resignFirstResponder()
+    }
+    
+    func addGestureRecognizerForView() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard(_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
     @IBAction func addSourceButtonTapped(_ sender: Any) {
         if textField.hasText {
             newsSources.append(textField.text!)
@@ -89,4 +98,11 @@ extension NewsSourceSettingsViewController: UITableViewDelegate, UITableViewData
         }
     }
     
+}
+
+extension NewsSourceSettingsViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
 }
