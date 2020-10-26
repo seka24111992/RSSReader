@@ -329,7 +329,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-tN-ZU5">
-                                                <rect key="frame" x="8" y="257.5" width="398" height="118.5"/>
+                                                <rect key="frame" x="8" y="257.5" width="398" height="93.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -347,10 +347,10 @@
                                                 </constraints>
                                             </imageView>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://lenta.ru/news/2020/10/25/sonn/" translatesAutoresizingMaskIntoConstraints="NO" id="Bop-vO-54v">
-                                                <rect key="frame" x="8" y="384" width="398" height="50"/>
+                                                <rect key="frame" x="8" y="359" width="398" height="100"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="gtp-fY-1aZ"/>
+                                                    <constraint firstAttribute="height" constant="100" id="gtp-fY-1aZ"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>

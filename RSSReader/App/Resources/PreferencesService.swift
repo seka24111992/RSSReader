@@ -26,7 +26,7 @@ open class PreferencesService {
             case .updateInterval:
                 return UpdateInterval.minute
             case .sourcesValue:
-                return ["http://lenta.ru/rss", "http://www.gazeta.ru/export/rss/lenta.xml"]
+                return ["http://lenta.ru/rss", "http://www.gazeta.ru/export/rss/lenta.xml", "http://feeds.bbci.co.uk/news/world/rss.xml", "https://www.nytimes.com/svc/collections/v1/publish/https://www.nytimes.com/section/world/rss.xml"]
             }
         }
     }
