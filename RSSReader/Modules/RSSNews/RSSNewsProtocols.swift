@@ -13,6 +13,7 @@ protocol RSSNewsViewProtocol: class {
     func setNewsSource(_ source: String)
     func setNewsDescription(_ description: String)
     func setNews(_ news: News)
+    func setLink(_ link: String)
 }
 
 protocol RSSNewsInteractorProtocol: class {

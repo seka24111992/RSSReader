@@ -38,6 +38,7 @@ class RSSNewsPresenter: NSObject, RSSNewsPresenterProtocol {
             view.setNewsSource(news.source ?? "")
             view.setNewsDescription(news.newsDescription ?? "")
             view.setNews(news)
+            view.setLink(news.link ?? "")
         }
     }
     

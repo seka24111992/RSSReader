@@ -31,6 +31,7 @@ open class NewsDataResponseDecoder: ResponseDecoder<[News]> {
                 let description = item["description"].text
                 let thubnailPath = item["enclosure"].attributes["url"]
                 let pubDate = item["pubDate"].text
+                let link = item["link"].text
 
                 
                 let news = News()
@@ -40,6 +41,7 @@ open class NewsDataResponseDecoder: ResponseDecoder<[News]> {
                 news.newsDescription = description
                 news.externalThubnailPath = thubnailPath
                 news.createDate = Date.fromString(string: pubDate ?? "") ?? Date()
+                news.link = link
                 
                 newsArray.append(news)
                 

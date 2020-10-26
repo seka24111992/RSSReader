@@ -14,6 +14,7 @@ class RSSNewsViewController: UIViewController, RSSNewsViewProtocol {
     @IBOutlet weak var newsDescriptionLabel: UILabel!
     @IBOutlet weak var newsSourceLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var linkTextView: UITextView!
     
     
     // MARK: - Properties
@@ -57,6 +58,12 @@ class RSSNewsViewController: UIViewController, RSSNewsViewProtocol {
     func setNews(_ news: News) {
         DispatchQueue.main.async {
             news.setThumbnail(thumbnailImage: self.imageView)
+        }
+    }
+    
+    func setLink(_ link: String) {
+        DispatchQueue.main.async {
+            self.linkTextView.text = link
         }
     }
 

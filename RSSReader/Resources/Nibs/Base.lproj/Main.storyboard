@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CcS-A9-rNJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CcS-A9-rNJ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -326,7 +326,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMZ-tN-ZU5">
-                                                <rect key="frame" x="8" y="257.5" width="398" height="20.5"/>
+                                                <rect key="frame" x="8" y="257.5" width="398" height="118.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -343,19 +343,34 @@
                                                     <constraint firstAttribute="width" secondItem="fWG-9Q-n3D" secondAttribute="height" multiplier="2:1" id="hkc-9q-hoe"/>
                                                 </constraints>
                                             </imageView>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="https://lenta.ru/news/2020/10/25/sonn/" translatesAutoresizingMaskIntoConstraints="NO" id="Bop-vO-54v">
+                                                <rect key="frame" x="8" y="384" width="398" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="gtp-fY-1aZ"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="bjS-E3-TPH" firstAttribute="top" secondItem="Sg9-rX-gAf" secondAttribute="bottom" constant="16" id="3js-Qw-99s"/>
                                             <constraint firstItem="fWG-9Q-n3D" firstAttribute="centerX" secondItem="AkW-qj-G3b" secondAttribute="centerX" id="5eg-Os-j5B"/>
+                                            <constraint firstItem="Bop-vO-54v" firstAttribute="top" secondItem="QMZ-tN-ZU5" secondAttribute="bottom" constant="8" id="79Z-Jl-bPM"/>
                                             <constraint firstItem="Sg9-rX-gAf" firstAttribute="leading" secondItem="AkW-qj-G3b" secondAttribute="leading" constant="8" id="D7w-iO-Oui"/>
                                             <constraint firstItem="QMZ-tN-ZU5" firstAttribute="top" secondItem="fWG-9Q-n3D" secondAttribute="bottom" constant="8" id="Fid-rY-7NW"/>
                                             <constraint firstAttribute="trailing" secondItem="bjS-E3-TPH" secondAttribute="trailing" constant="8" id="KKp-j6-JcP"/>
+                                            <constraint firstItem="Bop-vO-54v" firstAttribute="centerY" secondItem="AkW-qj-G3b" secondAttribute="centerY" id="MIc-ej-TYR"/>
                                             <constraint firstAttribute="trailing" secondItem="QMZ-tN-ZU5" secondAttribute="trailing" constant="8" id="XRG-jY-8dF"/>
                                             <constraint firstItem="QMZ-tN-ZU5" firstAttribute="leading" secondItem="AkW-qj-G3b" secondAttribute="leading" constant="8" id="alV-SX-LSV"/>
+                                            <constraint firstItem="Bop-vO-54v" firstAttribute="leading" secondItem="AkW-qj-G3b" secondAttribute="leading" constant="8" id="fBe-iW-eU0"/>
                                             <constraint firstItem="fWG-9Q-n3D" firstAttribute="leading" secondItem="AkW-qj-G3b" secondAttribute="leading" constant="40" id="fQe-HZ-A5i"/>
                                             <constraint firstItem="fWG-9Q-n3D" firstAttribute="top" secondItem="bjS-E3-TPH" secondAttribute="bottom" constant="8" id="hF6-o4-q5e"/>
                                             <constraint firstItem="Sg9-rX-gAf" firstAttribute="top" secondItem="AkW-qj-G3b" secondAttribute="top" constant="16" id="jaJ-j6-YhS"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bop-vO-54v" secondAttribute="trailing" constant="8" id="qPh-OZ-vxn"/>
                                             <constraint firstAttribute="trailing" secondItem="fWG-9Q-n3D" secondAttribute="trailing" constant="40" id="uqp-15-t6c"/>
                                             <constraint firstItem="bjS-E3-TPH" firstAttribute="leading" secondItem="AkW-qj-G3b" secondAttribute="leading" constant="8" id="y74-3T-2Hc"/>
                                             <constraint firstAttribute="trailing" secondItem="Sg9-rX-gAf" secondAttribute="trailing" constant="8" id="yKA-P7-pt9"/>
@@ -386,6 +401,7 @@
                     <navigationItem key="navigationItem" id="l0I-cX-MCm"/>
                     <connections>
                         <outlet property="imageView" destination="fWG-9Q-n3D" id="pJt-EH-Pz9"/>
+                        <outlet property="linkTextView" destination="Bop-vO-54v" id="XMe-8a-i5y"/>
                         <outlet property="newsDescriptionLabel" destination="QMZ-tN-ZU5" id="ZDE-VO-zLe"/>
                         <outlet property="newsSourceLabel" destination="Sg9-rX-gAf" id="VD4-67-fqC"/>
                         <outlet property="newsTitleLabel" destination="bjS-E3-TPH" id="aMA-aE-Dat"/>

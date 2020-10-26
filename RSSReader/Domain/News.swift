@@ -17,4 +17,5 @@ open class News: NSObject {
     open var localThubnailPath: String? = nil
     open var isOpen: Bool = false
     open var createDate = Date()
+    open var link: String? = nil
 }

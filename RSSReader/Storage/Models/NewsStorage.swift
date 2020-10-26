@@ -41,6 +41,7 @@ public final class NewsStorage: CoreDataStorage<NewsEntity>, Storage {
                 entity.isOpen = news.isOpen
             }
             entity.createDate = news.createDate
+            entity.link = news.link
         })
         
         return result
@@ -83,6 +84,7 @@ extension NewsEntity {
         news.localThubnailPath = localThubnailPath
         news.isOpen = isOpen
         news.createDate = createDate ?? Date()
+        news.link = link
     
         return news
     }
