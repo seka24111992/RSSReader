@@ -1,0 +1,19 @@
+/* 
+  Localizable.strings
+  RSSReader
+
+  Created by Сергей Гусаковский on 24.10.2020.
+  Copyright © 2020 SGU. All rights reserved.
+*/
+
+"OK" = "OK";
+"Cancel" = "Cancel";
+"Close" = "Close";
+"Select" = "Select";
+"Attention" = "Attention";
+"Yes" = "Yes";
+"No" = "No";
+
+"minute" = "1 minute";
+"TenMinutes" = "10 minutes";
+"ThirtyMinutes" = "30 minutes";

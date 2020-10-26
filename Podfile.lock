@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (4.8.1)
+  - AlamofireNetworkActivityIndicator (2.3.0):
+    - Alamofire (~> 4.7)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
+  - SDWebImage (4.4.6):
+    - SDWebImage/Core (= 4.4.6)
+  - SDWebImage/Core (4.4.6)
+  - SwiftyJSON (4.2.0)
+  - SwiftyXMLParser (5.1.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.1)
+  - AlamofireNetworkActivityIndicator (= 2.3.0)
+  - MagicalRecord (= 2.3.2)
+  - SDWebImage (= 4.4.6)
+  - SwiftyJSON (= 4.2.0)
+  - SwiftyXMLParser (from `https://github.com/yahoojapan/SwiftyXMLParser.git`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireNetworkActivityIndicator
+    - MagicalRecord
+    - SDWebImage
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  SwiftyXMLParser:
+    :git: https://github.com/yahoojapan/SwiftyXMLParser.git
+
+CHECKOUT OPTIONS:
+  SwiftyXMLParser:
+    :commit: 0ca0e992ce0135169c715a6580b99f3e99c503e7
+    :git: https://github.com/yahoojapan/SwiftyXMLParser.git
+
+SPEC CHECKSUMS:
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireNetworkActivityIndicator: 18346ff6d770d9513d0ac6f2d99706f40f93dbaa
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
+  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyXMLParser: c39a7854b7d32e447e19d0fabdd98696fe26f03a
+
+PODFILE CHECKSUM: a63db84d37ce3c5a661a67eeea9591ba1216ca20
+
+COCOAPODS: 1.8.4
